@@ -403,7 +403,7 @@ section {
   opacity: 0;
   visibility: hidden;
   will-change: opacity, visibility;
-  transition: opacity 300ms ease-out, transform 300ms ease-out;
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
 }
 
 .fade-right {
