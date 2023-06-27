@@ -150,9 +150,8 @@ header .nav-links li:hover {
 
 .presentation-text {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50px;
-  width: 400px;
   font-size: 36px;
   font-weight: 400;
   color: white;
