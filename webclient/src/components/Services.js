@@ -1,5 +1,6 @@
-import { FaTruckMoving, FaTractor } from 'react-icons/fa';
-import { GiWheat } from 'react-icons/gi';
+import { PiCodeFill } from 'react-icons/pi';
+import { BsServer } from 'react-icons/bs';
+import { BiSolidServer } from 'react-icons/bi';
 import FadeInSection from './FadeInSection';
 
 function Services(props) {
@@ -13,37 +14,40 @@ function Services(props) {
             <div className='services-list'>
                 <div className='service-block'>
                     <FadeInSection direction="fade-right">
-                        <FaTractor className='service-icon'/>
-                        <div className='service-label'>
-                            {translate.landCultivationTitle}
+                        <div className='service-header'>
+                            <PiCodeFill className='service-icon' /> 
+                            <div>{translate.frontEndServiceTitle}</div>
                         </div>
-                        <hr className='horizontal-line'/>
                         <div className='service-description'>
-                            {translate.landCultivationDescription}
+                            <p>{translate.frontEndServiceInfo1}</p>
+                            <p>{translate.frontEndServiceInfo2}</p>
+                            <p>{translate.frontEndServiceInfo3}</p>
+                        </div>
+                    </FadeInSection>
+                </div>
+                <div className='service-block'>
+                    <FadeInSection direction="fade-left">
+                        <div className='service-header'>
+                            <BiSolidServer className='service-icon' /> 
+                            <div>{translate.backEndServiceTitle}</div>
+                        </div>
+                        <div className='service-description'>
+                            <p>{translate.backEndServiceInfo1}</p>
+                            <p>{translate.backEndServiceInfo2}</p>
+                            <p>{translate.backEndServiceInfo3}</p>
                         </div>
                     </FadeInSection>
                 </div>
                 <div className='service-block'>
                     <FadeInSection direction="fade-right">
-                        <GiWheat className='service-icon'/>
-                        <div className='service-label'>
-                            {translate.agriculturalProductionTitle}
+                        <div className='service-header'>
+                            <BsServer className='service-icon' /> 
+                            <div>{translate.databaseServiceTitle}</div>
                         </div>
-                        <hr className='horizontal-line'/>
                         <div className='service-description'>
-                            {translate.agriculturalProductionDescription}
-                        </div>
-                    </FadeInSection>
-                </div>
-                <div className='service-block'>
-                    <FadeInSection direction="fade-right">
-                        <FaTruckMoving className='service-icon'/>
-                        <div className='service-label'>
-                            {translate.freightTitle}
-                        </div>
-                        <hr className='horizontal-line'/>
-                        <div className='service-description'>
-                            {translate.freightDescription}
+                            <p>{translate.databaseServiceInfo1}</p>
+                            <p>{translate.databaseServiceInfo2}</p>
+                            <p>{translate.databaseServiceInfo3}</p>
                         </div>
                     </FadeInSection>
                 </div>
