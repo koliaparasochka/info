@@ -29,7 +29,7 @@ class Header extends React.Component {
     render() {
         return (
             <header className="prevent-select">
-               <div className="logo">Eden2012</div>
+               <div className="logo">NickSoft2020</div>
                <ul className={this.state.isMobileMenuOpened && this.state.isMobileScreen ? "nav-links nav-links-mobile" : "nav-links nav-links-laptop"}>
                    <li><a href="#home" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.homeLink}</a></li>
                    <li><a href="#services" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.servicesLink}</a></li>
