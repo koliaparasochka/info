@@ -1,8 +1,6 @@
 import React from "react";
 
-const FadeInSection = ({
-    children,
-  }) => {
+const FadeInSection = (props) => {
     const domRef = React.useRef();
     
     const [isVisible, setVisible] = React.useState(false);
@@ -26,7 +24,11 @@ const FadeInSection = ({
       return () => observer.disconnect();
     }, []);
   
-    return (<section ref={ domRef } className={ isVisible ? ' is-visible' : '' }>{ children }</section>);
+    return (
+      <section ref={ domRef } className={`${props.direction} ${isVisible ? ' is-visible' : '' }`}>
+        { props.children }
+      </section>
+    );
   };
 
   export default FadeInSection;

@@ -11,7 +11,8 @@ function Services(props) {
                 {translate.servicesTitle}
             </div>
             <div className='services-list'>
-                <div className='service-block fade-right'>
+                <div className='service-block'>
+                    <FadeInSection direction="fade-right">
                         <FaTractor className='service-icon'/>
                         <div className='service-label'>
                             {translate.landCultivationTitle}
@@ -20,8 +21,10 @@ function Services(props) {
                         <div className='service-description'>
                             {translate.landCultivationDescription}
                         </div>
+                    </FadeInSection>
                 </div>
-                <div className='service-block fade-right'>
+                <div className='service-block'>
+                    <FadeInSection direction="fade-right">
                         <GiWheat className='service-icon'/>
                         <div className='service-label'>
                             {translate.agriculturalProductionTitle}
@@ -30,8 +33,10 @@ function Services(props) {
                         <div className='service-description'>
                             {translate.agriculturalProductionDescription}
                         </div>
+                    </FadeInSection>
                 </div>
-                <div className='service-block fade-right'>
+                <div className='service-block'>
+                    <FadeInSection direction="fade-right">
                         <FaTruckMoving className='service-icon'/>
                         <div className='service-label'>
                             {translate.freightTitle}
@@ -40,6 +45,7 @@ function Services(props) {
                         <div className='service-description'>
                             {translate.freightDescription}
                         </div>
+                    </FadeInSection>
                 </div>
             </div>
         </div>
