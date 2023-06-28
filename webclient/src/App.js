@@ -27,7 +27,7 @@ class App extends React.Component {
         <Header content={this.state.content} setTranslate={this.setTranslate}/>
         <div className='wrapper'>
           <Routes>
-            <Route path="/info" element={<Home content={this.state.content} />}/>
+            <Route path="/info/" element={<Home content={this.state.content} />}/>
             <Route path="/info/about" element={<About content={this.state.content} />}/>
             <Route path="/info/contacts" element={<Contacts content={this.state.content} />} />
           </Routes>
