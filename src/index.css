@@ -533,7 +533,7 @@ section {
 
   .lang-select {
     left: 0px;
-    top: 230px;
+    top: 185px;
     border-top: 1px solid #f2f2f2;
   }
 
@@ -591,9 +591,22 @@ section {
     left: 18px;
     width: fit-content;
     font-size: 30px;
+    max-width: 300px;
   }
 
   .message-field {
     height: 250px;
+  }
+
+  .fade-right {
+    transform: none;
+  }
+  
+  .fade-left {
+    transform: none;
+  }
+  
+  .fade-bottom {
+    transform: none;
   }
 }
