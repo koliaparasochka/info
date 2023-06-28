@@ -142,7 +142,7 @@ class Contacts extends React.Component {
                 SecureToken: process.env.REACT_APP_SECURE_TOKEN,
                 To: process.env.REACT_APP_EMAIL,
                 From: process.env.REACT_APP_EMAIL,
-                Subject : "Повідомлення від https://eden-2012.github.io/home/",
+                Subject : "Повідомлення від https://nicksoft2020.onrender.com/",
                 Body : `
                     <p>${this.state.fields.message}</p>
                     <br/>
