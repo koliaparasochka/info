@@ -108,7 +108,8 @@ header .nav-links-laptop li {
   user-select: none; /* Standard syntax */
 }
 
-header .nav-links li a {
+header .nav-links li a,
+.social-link {
   text-decoration: none;
   color: inherit;
 }
@@ -284,6 +285,21 @@ header .nav-links li:hover {
 .address-section {
   color: darkblue;
   width: 400px;
+  text-align: start;
+}
+
+.social-link-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+.social-link:last-child {
+  margin-left: 5px;
+}
+
+.social-link-icon:hover {
+  color: mediumblue;
 }
 
 .address,
@@ -312,7 +328,7 @@ header .nav-links li:hover {
 }
 
 .error-text {
-  text-align: start;
+  text-align: center;
   height: 20px;
   width: 100%;
   font-size: 14px;

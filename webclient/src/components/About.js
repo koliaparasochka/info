@@ -30,8 +30,6 @@ function About(props) {
                 </FadeInSection>
             </div>
         </div>
-
-        
     )
 }
 

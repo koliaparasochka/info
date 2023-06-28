@@ -1,5 +1,7 @@
 import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { BsFacebook } from 'react-icons/bs';
 import 'react-toastify/dist/ReactToastify.css';
 
 class Contacts extends React.Component {
@@ -38,12 +40,14 @@ class Contacts extends React.Component {
                 <div className="contacts-title">{this.translate.contactsTitle}</div>
                 <div className="contacts-content">
                     <div className="address-section">
-                        <div className="address-title">{this.translate.addressTitle}</div>
-                        <div className="address">{this.translate.addressContent}</div>
                         <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
                         <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
-                        <div className="address">{this.translate.logistician} <br/>{this.translate.logisticianName}</div>
-                        <div className="telephone-number">{this.translate.logisticianMobilePhoneNumber}</div>
+                        <a className="social-link" href="https://www.instagram.com/kolian.parasochka/" target="_blank">
+                            <FaInstagramSquare className="social-link-icon"/>
+                        </a>
+                        <a className="social-link" href="https://www.facebook.com/profile.php?id=100021883626970" target="_blank">
+                            <BsFacebook className="social-link-icon"/>
+                        </a>
                     </div>
                     <div className="contacts-block ">
                         <form className="contact-form">
