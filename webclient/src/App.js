@@ -1,7 +1,9 @@
 import React from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
 import Translate from './translations/translate.json';
 
 class App extends React.Component {
@@ -23,7 +25,10 @@ class App extends React.Component {
       <div className="App">
         <Header content={this.state.content} setTranslate={this.setTranslate}/>
         <div className='wrapper'>
-          <Home content={this.state.content} />
+          <Routes>
+            <Route path="/" element={<Home content={this.state.content} />}/>
+            <Route path="/about" element={<About content={this.state.content} />}/>
+          </Routes>
         </div>
       </div>
     ); 

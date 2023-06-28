@@ -4,10 +4,9 @@ import { BsServer } from 'react-icons/bs';
 import { BiSolidServer } from 'react-icons/bi';
 import FadeInSection from './FadeInSection';
 
-
 function Home(props) {
     const translate = props.content;
-    
+
     return (
         <div>
             <div id="home" className='presentation fade-text'>
