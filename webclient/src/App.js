@@ -1,9 +1,10 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
+import Contacts from './components/Contacts';
 import Translate from './translations/translate.json';
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home content={this.state.content} />}/>
             <Route path="/about" element={<About content={this.state.content} />}/>
+            <Route path="/contacts" element={<Contacts content={this.state.content} />} />
           </Routes>
         </div>
       </div>

@@ -312,6 +312,7 @@ header .nav-links li:hover {
 }
 
 .error-text {
+  text-align: start;
   height: 20px;
   width: 100%;
   font-size: 14px;

@@ -34,7 +34,7 @@ class Header extends React.Component {
                <ul className={this.state.isMobileMenuOpened && this.state.isMobileScreen ? "nav-links nav-links-mobile" : "nav-links nav-links-laptop"}>
                    <li><Link to="/" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.homeLink}</Link></li>
                    <li><Link to="/about" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.aboutLink}</Link></li>
-                   <li><Link to="#contacts" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.contactsLink}</Link></li>
+                   <li><Link to="/contacts" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.contactsLink}</Link></li>
                    <li>
                         <img className="select-lang-button" src={`https://flagcdn.com/${this.state.flag}.svg`} onClick={() =>  this.setState({ isLangDialogOpened: !this.state.isLangDialogOpened })} width="32" height="20"/> 
                        { 
