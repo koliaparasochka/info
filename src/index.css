@@ -598,14 +598,25 @@ section {
     height: 250px;
   }
 
-  .fade-right {
-    transform: none;
+  .service-header {
+    flex-direction: column;
+  }
+
+  .service-icon {
+    margin: auto;
+  }
+
+  .service-block {
+    padding-bottom: 15px;
+  }
+
+  .services-list {
+    margin-top: 20px;
+    height: fit-content;
   }
   
-  .fade-left {
-    transform: none;
-  }
-  
+  .fade-right,
+  .fade-left,
   .fade-bottom {
     transform: none;
   }
