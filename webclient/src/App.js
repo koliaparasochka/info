@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import Services from './components/Services';
 import Translate from './translations/translate.json';
 
 class App extends React.Component {
@@ -25,7 +24,6 @@ class App extends React.Component {
         <Header content={this.state.content} setTranslate={this.setTranslate}/>
         <div className='wrapper'>
           <Home content={this.state.content} />
-          <Services content={this.state.content} />
         </div>
       </div>
     ); 
