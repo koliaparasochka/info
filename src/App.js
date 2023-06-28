@@ -30,7 +30,6 @@ class App extends React.Component {
             <Route path="/" element={<Home content={this.state.content} />}/>
             <Route path="/about" element={<About content={this.state.content} />}/>
             <Route path="/contacts" element={<Contacts content={this.state.content} />} />
-            <Route path="*" element={<Home content={this.state.content} />}/>
           </Routes>
         </div>
       </div>
