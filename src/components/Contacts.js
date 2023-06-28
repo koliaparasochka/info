@@ -1,4 +1,5 @@
 import React from "react";
+import FadeInSection from './FadeInSection'
 import { ToastContainer, toast } from 'react-toastify';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
@@ -37,63 +38,65 @@ class Contacts extends React.Component {
     render() {
         return (
             <div id="contacts" className="contacts-section">
-                <div className="contacts-title">{this.translate.contactsTitle}</div>
-                <div className="contacts-content">
-                    <div className="address-section">
-                        <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
-                        <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
-                        <a className="social-link" href="https://www.instagram.com/kolian.parasochka/" target="_blank">
-                            <FaInstagramSquare className="social-link-icon"/>
-                        </a>
-                        <a className="social-link" href="https://www.facebook.com/profile.php?id=100021883626970" target="_blank">
-                            <BsFacebook className="social-link-icon"/>
-                        </a>
+                <FadeInSection>
+                    <div className="contacts-title">{this.translate.contactsTitle}</div>
+                    <div className="contacts-content">
+                        <div className="address-section">
+                            <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
+                            <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
+                            <a className="social-link" href="https://www.instagram.com/kolian.parasochka/" target="_blank">
+                                <FaInstagramSquare className="social-link-icon"/>
+                            </a>
+                            <a className="social-link" href="https://www.facebook.com/profile.php?id=100021883626970" target="_blank">
+                                <BsFacebook className="social-link-icon"/>
+                            </a>
+                        </div>
+                        <div className="contacts-block ">
+                            <form className="contact-form">
+                                <input className={"input-field " + (this.state.errors["firstName"] && 'error-input')} type='text' 
+                                    placeholder={this.translate.firstName} 
+                                    onChange={this.handleChange.bind(this, "firstName")}
+                                    value={this.state.fields["firstName"]}/>
+                                <div className="error-text">
+                                    { this.state.errors["firstName"] }
+                                </div>
+    
+                                <input className={"input-field " + (this.state.errors["lastName"] && 'error-input')} type='text' 
+                                    placeholder={this.translate.lastName} 
+                                    onChange={this.handleChange.bind(this, "lastName")}
+                                    value={this.state.fields["lastName"]}/>
+                                <div className="error-text">
+                                    { this.state.errors["lastName"] }
+                                </div>
+    
+                                <input className={"input-field " + (this.state.errors["email"] && 'error-input')} type='email' 
+                                    placeholder={this.translate.email} 
+                                    onChange={this.handleChange.bind(this, "email")}
+                                    value={this.state.fields["email"]}/>
+                                <div className="error-text">
+                                    { this.state.errors["email"] }
+                                </div>
+    
+                                <input className={"input-field " + (this.state.errors["phoneNumber"] && 'error-input')} type='tel' 
+                                    placeholder={this.translate.phoneNumber} 
+                                    onChange={this.handleChange.bind(this, "phoneNumber")}
+                                    value={this.state.fields["phoneNumber"]}/>
+                                <div className="error-text">
+                                    { this.state.errors["phoneNumber"] }
+                                </div>
+    
+                                <textarea className={"input-field message-field " + (this.state.errors["message"] && 'error-input')} placeholder={this.translate.messageTitle}
+                                    onChange={this.handleChange.bind(this, "message")}
+                                    value={this.state.fields["message"]}></textarea>
+                                <div className="error-text">
+                                { this.state.errors["message"] }
+                                </div>
+    
+                                <button className="send-message-button" onClick={this.contactSubmit.bind(this)}>{this.translate.sendLabel}</button>
+                            </form>
+                        </div>
                     </div>
-                    <div className="contacts-block ">
-                        <form className="contact-form">
-                            <input className={"input-field " + (this.state.errors["firstName"] && 'error-input')} type='text' 
-                                placeholder={this.translate.firstName} 
-                                onChange={this.handleChange.bind(this, "firstName")}
-                                value={this.state.fields["firstName"]}/>
-                            <div className="error-text">
-                                { this.state.errors["firstName"] }
-                            </div>
-    
-                            <input className={"input-field " + (this.state.errors["lastName"] && 'error-input')} type='text' 
-                                placeholder={this.translate.lastName} 
-                                onChange={this.handleChange.bind(this, "lastName")}
-                                value={this.state.fields["lastName"]}/>
-                            <div className="error-text">
-                                { this.state.errors["lastName"] }
-                            </div>
-    
-                            <input className={"input-field " + (this.state.errors["email"] && 'error-input')} type='email' 
-                                placeholder={this.translate.email} 
-                                onChange={this.handleChange.bind(this, "email")}
-                                value={this.state.fields["email"]}/>
-                            <div className="error-text">
-                                { this.state.errors["email"] }
-                            </div>
-    
-                            <input className={"input-field " + (this.state.errors["phoneNumber"] && 'error-input')} type='tel' 
-                                placeholder={this.translate.phoneNumber} 
-                                onChange={this.handleChange.bind(this, "phoneNumber")}
-                                value={this.state.fields["phoneNumber"]}/>
-                            <div className="error-text">
-                                { this.state.errors["phoneNumber"] }
-                            </div>
-    
-                            <textarea className={"input-field message-field " + (this.state.errors["message"] && 'error-input')} placeholder={this.translate.messageTitle}
-                                onChange={this.handleChange.bind(this, "message")}
-                                value={this.state.fields["message"]}></textarea>
-                            <div className="error-text">
-                            { this.state.errors["message"] }
-                            </div>
-    
-                            <button className="send-message-button" onClick={this.contactSubmit.bind(this)}>{this.translate.sendLabel}</button>
-                        </form>
-                    </div>
-                </div>
+                </FadeInSection>
                 <ToastContainer/>
             </div>
         )
