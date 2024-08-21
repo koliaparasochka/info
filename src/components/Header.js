@@ -33,6 +33,7 @@ class Header extends React.Component {
                <div className="logo">NickSoft2020</div>
                <ul className={this.state.isMobileMenuOpened && this.state.isMobileScreen ? "nav-links nav-links-mobile" : "nav-links nav-links-laptop"}>
                    <li><Link to="/" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.homeLink}</Link></li>
+                   <li><Link to="/projects" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.projectsLink}</Link></li>
                    <li><Link to="/about" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.aboutLink}</Link></li>
                    <li><Link to="/contacts" onClick={() => this.setState({ isMobileMenuOpened: false })}>{this.props.content.contactsLink}</Link></li>
                    <li>
