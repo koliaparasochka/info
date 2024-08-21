@@ -1,9 +1,5 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
-//import Eden_2012_management_en from '../assets/videos/en/Eden_2012_management_en.mp4';
-//import Eden_2012_management_ua from '../assets/videos/en/Eden_2012_management_ua.mp4';
-//import Eden_2012_public_en from '../assets/videos/en/Eden_2012_public_en.mp4';
-//import Eden_2012_public_ua from '../assets/videos/en/Eden_2012_public_ua.mp4';
 
 export default class Projects extends React.Component {
     language;
