@@ -47,25 +47,24 @@ export default class Projects extends React.Component {
                                     { 
                                         this.state.language === 'en' && 
                                         <iframe className="video-file" 
-                                            src="https://www.youtube.com/embed/5fOeQ2iXuSc?si=SxyN9pe4iHQhSCT1" 
+                                            src="https://www.youtube.com/embed/H5iFAlNlYL0?si=jhez1jkJMTYfbrNU" 
                                             title="YouTube video player" 
-                                            frameborder="0" 
+                                            frameBorder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            referrerpolicy="strict-origin-when-cross-origin" 
-                                            allowfullscreen
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
                                         ></iframe>
-
                                     }
 
                                     { 
                                         this.state.language === 'ua' && 
                                         <iframe className="video-file" 
-                                            src="https://www.youtube.com/embed/U_k5-fcjiWI?si=plcV6n6M4tgzL1if" 
+                                            src="https://www.youtube.com/embed/9xMh28EJlz0?si=q3iR--OXkPzSlLqj" 
                                             title="YouTube video player" 
-                                            frameborder="0"
+                                            frameBorder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            referrerpolicy="strict-origin-when-cross-origin" 
-                                            allowfullscreen
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
                                         ></iframe>
                                     }
                                 </div>
@@ -84,14 +83,19 @@ export default class Projects extends React.Component {
                                 <div className='project-video'>
                                     { 
                                         this.state.language === 'en' && 
-                                        <video className="lazy video-file" playsinline preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-en.PNG'>
-                                            <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-en.mp4' type="video/mp4" /> 
-                                        </video>
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/U5umz6aDpPI?si=muxYylurSIm7nluC" 
+                                            title="YouTube video player" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
+                                        ></iframe>
                                     }
 
                                     { 
                                         this.state.language === 'ua' && 
-                                        <video className="lazy video-file" playsinline preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.PNG'>
+                                        <video className="lazy video-file" preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.PNG'>
                                             <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.mp4' type="video/mp4" /> 
                                         </video>
                                     }
