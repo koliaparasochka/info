@@ -16,10 +16,6 @@ export default class Projects extends React.Component {
         this.checkTranslate = this.checkTranslate.bind(this);
     }
 
-    componentDidMount() {
-        this.lazyLoading();
-    }
-
     componentDidUpdate() {
         this.checkTranslate();
     }
@@ -36,35 +32,6 @@ export default class Projects extends React.Component {
         }
     }
 
-    lazyLoading() {
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-          
-            if ("IntersectionObserver" in window) {
-              var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(video) {
-                  if (video.isIntersecting) {
-                    for (var source in video.target.children) {
-                      var videoSource = video.target.children[source];
-                      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-                        videoSource.src = videoSource.dataset.src;
-                      }
-                    }
-          
-                    video.target.load();
-                    video.target.classList.remove("lazy");
-                    lazyVideoObserver.unobserve(video.target);
-                  }
-                });
-              });
-          
-              lazyVideos.forEach(function(lazyVideo) {
-                lazyVideoObserver.observe(lazyVideo);
-              });
-            }
-          });
-    }
-
     render() {
         return (
             <div>
@@ -79,16 +46,27 @@ export default class Projects extends React.Component {
                                 <div className='project-video'>
                                     { 
                                         this.state.language === 'en' && 
-                                        <video className="lazy video-file" playsinline preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-en.PNG'>
-                                            <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-en.mp4' type="video/mp4" /> 
-                                        </video>
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/5fOeQ2iXuSc?si=SxyN9pe4iHQhSCT1" 
+                                            title="YouTube video player" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerpolicy="strict-origin-when-cross-origin" 
+                                            allowfullscreen
+                                        ></iframe>
+
                                     }
 
                                     { 
                                         this.state.language === 'ua' && 
-                                        <video className="lazy video-file" playsinline preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-ua.PNG'>
-                                            <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.mp4' type="video/mp4" /> 
-                                        </video>
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/U_k5-fcjiWI?si=plcV6n6M4tgzL1if" 
+                                            title="YouTube video player" 
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerpolicy="strict-origin-when-cross-origin" 
+                                            allowfullscreen
+                                        ></iframe>
                                     }
                                 </div>
                                 <div className='project-description'>
