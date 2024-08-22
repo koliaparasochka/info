@@ -46,14 +46,14 @@ export default class Projects extends React.Component {
                                 <div className='project-video'>
                                     { 
                                         this.state.language === 'en' && 
-                                        <video preload="none" className="video-file" controls>
+                                        <video preload="none" className="video-file" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-en.PNG'>
                                             <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-en.mp4' type="video/mp4" /> 
                                         </video>
                                     }
 
                                     { 
                                         this.state.language === 'ua' && 
-                                        <video preload="none" className="video-file" controls>
+                                        <video preload="none" className="video-file" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-public-ua.PNG'>
                                             <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.mp4' type="video/mp4" /> 
                                         </video>
                                     }
@@ -73,14 +73,14 @@ export default class Projects extends React.Component {
                                 <div className='project-video'>
                                     { 
                                         this.state.language === 'en' && 
-                                        <video preload="none" className="video-file" controls>
+                                        <video preload="none" className="video-file" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-en.PNG'>
                                             <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-en.mp4' type="video/mp4" /> 
                                         </video>
                                     }
 
                                     { 
                                         this.state.language === 'ua' && 
-                                        <video preload="none" className="video-file" controls>
+                                        <video preload="none" className="video-file" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.PNG'>
                                             <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.mp4' type="video/mp4" /> 
                                         </video>
                                     }
