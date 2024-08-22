@@ -95,9 +95,14 @@ export default class Projects extends React.Component {
 
                                     { 
                                         this.state.language === 'ua' && 
-                                        <video className="lazy video-file" preload="none" controls poster='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.PNG'>
-                                            <source src='https://nicksoft2020info.blob.core.windows.net/nicksoft2020info/Eden2012-management-ua.mp4' type="video/mp4" /> 
-                                        </video>
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/om3HByi2KPo?si=kb9-Tngurk5BE9ra" 
+                                            title="YouTube video player" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
+                                        ></iframe>
                                     }
                                 </div>
                                 <div className='project-description'>
