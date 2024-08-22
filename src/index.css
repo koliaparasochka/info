@@ -131,7 +131,6 @@ header .nav-links li a,
 .project-description {
   text-align: start;
   text-indent: 10px;
-  padding: 0px 5px;
 }
 
 header .nav-links li:hover {
@@ -585,6 +584,10 @@ section {
   .mobile-menu-button {
     display: none;
   }
+
+  .project-description {
+    padding-left: 10px;
+  }
 }
 
 @media(max-width: 700px) {
@@ -594,7 +597,7 @@ section {
 
   .lang-select {
     left: 0px;
-    top: 185px;
+    top: 230px;
     border-top: 1px solid #f2f2f2;
   }
 
