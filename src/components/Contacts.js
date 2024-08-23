@@ -44,7 +44,7 @@ class Contacts extends React.Component {
                         <div className="address-section">
                             <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
                             <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
-                            <a className="social-link" href="https://www.instagram.com/kolian.parasochka/" target="_blank">
+                            <a className="social-link" href="https://www.instagram.com/kolia.parasochka/" target="_blank">
                                 <FaInstagramSquare className="social-link-icon"/>
                             </a>
                             <a className="social-link" href="https://www.facebook.com/profile.php?id=100021883626970" target="_blank">
