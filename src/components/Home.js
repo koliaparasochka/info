@@ -59,7 +59,7 @@ function Home(props) {
                         </FadeInSection>
                     </div>
                     <div className='service-block'>
-                        <FadeInSection direction="fade-right">
+                        <FadeInSection direction="fade-left">
                             <div className='service-header'>
                                 <FaMobileAlt className='service-icon' /> 
                                 <div>{translate.mobileServiceTitle}</div>
