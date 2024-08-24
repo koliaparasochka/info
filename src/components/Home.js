@@ -2,6 +2,7 @@ import '../images/home-image.jpg'
 import { PiCodeFill } from 'react-icons/pi';
 import { BsServer } from 'react-icons/bs';
 import { BiSolidServer } from 'react-icons/bi';
+import { FaMobileAlt } from "react-icons/fa";
 import FadeInSection from './FadeInSection';
 
 function Home(props) {
@@ -54,6 +55,17 @@ function Home(props) {
                                 <p>{translate.databaseServiceInfo1}</p>
                                 <p>{translate.databaseServiceInfo2}</p>
                                 <p>{translate.databaseServiceInfo3}</p>
+                            </div>
+                        </FadeInSection>
+                    </div>
+                    <div className='service-block'>
+                        <FadeInSection direction="fade-right">
+                            <div className='service-header'>
+                                <FaMobileAlt className='service-icon' /> 
+                                <div>{translate.mobileServiceTitle}</div>
+                            </div>
+                            <div className='service-description'>
+                                <p>{translate.mobileServiceDescription}</p>
                             </div>
                         </FadeInSection>
                     </div>
