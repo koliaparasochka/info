@@ -49,7 +49,9 @@
         "eden2012WebsiteBusinessCard": "Eden 2012 (сайт-візитка)",
         "eden2012WebsiteBusinessCardDescription": "Звичайний сайт-візитка для фермерського господарства Eden 2012 із описом бізнесу та контактною інформацією. Можете перейти на веб сайт",
         "eden2012Management": "Eden 2012 - менеджмент",
-        "eden2012ManagementDescription": "Система менеджменту полями для фермерського господарства, яка дає змогу зберігати історію обробки землі. Керування доступом користувачів, перегляд статистики прибутку та урожаю, можливість відтворити сезон та завантажити звіт у форматі pdf."
+        "eden2012ManagementDescription": "Система менеджменту полями для фермерського господарства, яка дає змогу зберігати історію обробки землі. Керування доступом користувачів, перегляд статистики прибутку та урожаю, можливість відтворити сезон та завантажити звіт у форматі pdf.",
+        "justMusic": "Just music",
+        "justMusicDescription": "Простий і безкоштовний аудіоплеєр без реклами для прослуховування музики з мобільного пристрою. Якщо ви не хочете слухати деякі аудіофайли, наприклад файли диктофона, вам слід скористатися функцією ігнорування. Ви можете відкрити сторінку налаштувань, щоб вибрати тему, мову та швидкість відтворення."
     },
     "en": {
         "homeLink": "HOME",
@@ -101,6 +103,8 @@
         "link": "link",
         "eden2012WebsiteBusinessCardDescription": "The original business card website for the farming business of Eden 2012 with a description and contact information. You can go to the website",
         "eden2012Management": "Eden 2012 - management",
-        "eden2012ManagementDescription": "A field management system for the farming kingdom, which allows you to find out the history of land cultivation. Access to sources, viewing profit and harvest statistics, the ability to open the season and download in pdf format."
+        "eden2012ManagementDescription": "A field management system for the farming kingdom, which allows you to find out the history of land cultivation. Access to sources, viewing profit and harvest statistics, the ability to open the season and download in pdf format.",
+        "justMusic": "Just music",
+        "justMusicDescription": "Simple and free ad-free audio player for listening to music from your mobile device. If you don't want to listen to some audio files, such as voice recorder files, you should use the ignore function. You can open the settings page to select the theme, language and playback speed."
     }
 }

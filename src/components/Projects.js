@@ -111,6 +111,43 @@ export default class Projects extends React.Component {
                             </div>
                         </FadeInSection>
                     </div>
+                    <div className='project-block'>
+                        <FadeInSection>
+                            <div className='project-title'>
+                                {this.translate.justMusic}
+                            </div>
+                            <div className="project-content">
+                                <div className='project-video'>
+                                    { 
+                                        this.state.language === 'en' && 
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/DYemWhmI0CU?si=Mvdsq-rYzxbdSZGT" 
+                                            title="YouTube video player" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
+                                        ></iframe>
+                                    }
+
+                                    { 
+                                        this.state.language === 'ua' && 
+                                        <iframe className="video-file" 
+                                            src="https://www.youtube.com/embed/wSMWlNoiCkQ?si=HN3bGO5-RLSSqUvO" 
+                                            title="YouTube video player" 
+                                            frameBorder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                            allowFullScreen
+                                        ></iframe>
+                                    }
+                                </div>
+                                <div className='project-description'>
+                                    <p>{this.translate.justMusicDescription} <a className="project-link" href="https://play.google.com/store/apps/details?id=com.anonymous.JustMusic&pli=1" target="_blank">Google play market</a>.</p>
+                                </div>
+                            </div>
+                        </FadeInSection>
+                    </div>
                 </div>
             </div>
         )
