@@ -3,10 +3,15 @@ import { PiCodeFill } from 'react-icons/pi';
 import { BsServer } from 'react-icons/bs';
 import { BiSolidServer } from 'react-icons/bi';
 import { FaMobileAlt } from "react-icons/fa";
-import FadeInSection from './FadeInSection';
+import FadeInSection from '../components/FadeInSection';
+import { useEffect } from 'react';
 
 function Home(props) {
     const translate = props.content;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div>

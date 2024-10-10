@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Contacts from './components/Contacts';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contacts from './pages/Contacts';
 import Translate from './translations/translate.json';
-import Projects from './components/Projects';
+import Projects from './pages/Projects';
 
 class App extends React.Component {
   constructor(props) {

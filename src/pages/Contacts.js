@@ -1,11 +1,11 @@
 import React from "react";
-import FadeInSection from './FadeInSection'
+import FadeInSection from '../components/FadeInSection'
 import { ToastContainer, toast } from 'react-toastify';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 import 'react-toastify/dist/ReactToastify.css';
 
-class Contacts extends React.Component {
+export default class Contacts extends React.Component {
     translate;
     emptyForm = {
         firstName: '',
@@ -33,6 +33,10 @@ class Contacts extends React.Component {
 
     componentDidUpdate() {
         this.checkTranslate();
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -303,5 +307,3 @@ class Contacts extends React.Component {
         }
     }
 }
-
-export default Contacts;

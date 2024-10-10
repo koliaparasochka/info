@@ -1,7 +1,12 @@
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../components/FadeInSection";
+import { useEffect } from 'react';
 
 function About(props) {
     const translate = props.content;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div>

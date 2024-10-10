@@ -1,5 +1,5 @@
 import React from "react";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../components/FadeInSection";
 
 export default class Projects extends React.Component {
     language;
@@ -18,6 +18,10 @@ export default class Projects extends React.Component {
 
     componentDidUpdate() {
         this.checkTranslate();
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     checkTranslate() {
