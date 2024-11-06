@@ -35,7 +35,7 @@ export default class Projects extends React.Component {
             });
         }
     }
-
+// - <a className="project-link" href="https://eden-2012.onrender.com/" target="_blank">{this.translate.link}</a>.
     render() {
         return (
             <div>
@@ -73,7 +73,7 @@ export default class Projects extends React.Component {
                                     }
                                 </div>
                                 <div className='project-description'>
-                                    <p>{this.translate.eden2012WebsiteBusinessCardDescription} - <a className="project-link" href="https://eden-2012.onrender.com/" target="_blank">{this.translate.link}</a>.</p>
+                                    <p>{this.translate.eden2012WebsiteBusinessCardDescription}</p>
                                 </div>
                             </div>
                         </FadeInSection>
