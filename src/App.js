@@ -21,7 +21,7 @@ class App extends React.Component {
 
     this.setTranslate = this.setTranslate.bind(this);
   }
-
+//<Route path="/contacts" element={<Contacts content={this.state.content} />} />
   render() {
     return (
       <div className="App">
@@ -30,7 +30,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home content={this.state.content} />}/>
             <Route path="/about" element={<About content={this.state.content} />}/>
-            <Route path="/contacts" element={<Contacts content={this.state.content} />} />
+            
             <Route path="/projects" element={<Projects content={this.state.content} />} />
           </Routes>
         </div>
