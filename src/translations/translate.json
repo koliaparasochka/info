@@ -21,11 +21,11 @@
         "databaseServiceInfo2": "Зазвичай бізнес логіка великих веб додатків використовуює базу даних для обробки інформації. Тому Вам слід звернути увагу на цю послугу.",
         "databaseServiceInfo3": "",
         "aboutTitle":"ПРО НАС",
-        "about1":"Компанія була зареєстрована в 2020 році по спеціальності 'Комп'ютерне програмування'. Від початку свого існування ми займалися розробкою програмного забезпечення під замовлення.",
-        "about2":"Основною спеціалізацією компанії є розробка веб додатків від найпростіших до найскладніших за масштабом та бізнес логікою. Одним із перших таких проектів була розробка серверної частити для веб сайту з дерматології, з використанням технологій ASP.NET Core 3 WEB API, Dapper та MSSQL Server. Мікросервісна архітектура допомогла зробити цей проект модульним та простим для модифікацій у майбутньому.",
+        "about1":"Я почав працювати в 2019 році по спеціальності 'Комп'ютерне програмування'. Займався розробкою програмного забезпечення під замовлення.",
+        "about2":"Основною спеціалізацією є розробка веб додатків від найпростіших до найскладніших за масштабом та бізнес логікою. Одним із перших таких проектів була розробка серверної частити для веб сайту з дерматології, з використанням технологій ASP.NET Core 3 WEB API, Dapper та MSSQL Server. Мікросервісна архітектура допомогла зробити цей проект модульним та простим для модифікацій у майбутньому.",
         "about3":"Другий проект був для американської компанії, яка замалася зберіганням та доставками їжі. Дуже великий проект, де була робота не тільки на серверній частині, а й на стороні клієнта (браузер). Використовувались технології ASP.NET MVC 5, ASP.NET WEB API, Angular 5, Angular Material, Dapper та архітектура onion. Крім того, для підтримки автотестів ми використовували фреймворки Selenium і Atata.",
         "about4":"Темою наступного проекту була логістика для одягу від складів до магазинів. Цей веб додаток допомагає підвищити ефективність продажу товарів. Дуже цікавий проект із сучасними технологіями, версії яких постійно оновлювалися. Для розробки використовувались Angular, Angular Material, ASP.NET WEB API Core, ADO.NET, MSSQL Server, Entity Framework, SignalR та Azure Services.",
-        "aboutCEO":"Директором компанії є Парасочка Микола Геннадійович. У 2016 році почав навчатись в Харківському політехнічному інституті за спеціальністю 'Комп'ютерна інженерія'. Отримав диплом бакалавра в 2020 році, а 23 грудня 2021 року отримав диплом магістра. Працює у сфері комп'ютерного програмування з 2019 року як .Net розробник повного стека.",
+        "aboutCEO":"У 2016 році я почав навчатись в Харківському політехнічному інституті за спеціальністю 'Комп'ютерна інженерія'. Отримав диплом бакалавра в 2020 році, а 23 грудня 2021 року отримав диплом магістра. Працюю у сфері комп'ютерного програмування з 2019 року як .Net розробник повного стека.",
         "contactsTitle":"КОНТАКТИ",
         "CEO":"Директор: ",
         "CEOName": "Парасочка Микола Геннадійович",
@@ -53,7 +53,9 @@
         "justMusic": "Just music",
         "justMusicDescription": "Простий та безкоштовний аудіоплеєр без реклами для прослуховування музики з мобільного пристрою. Якщо ви не хочете слухати деякі аудіофайли, наприклад файли диктофона, вам слід скористатися функцією ігнорування. Ви можете відкрити сторінку налаштувань, щоб вибрати тему, мову та швидкість відтворення.",
         "mobileServiceTitle": "Розробка мобільних застосунків",
-        "mobileServiceDescription": "Вам потрібен мобільний застосунок? Для розробки програм під смартфони ми використовуємо React Native технологію та бібліотеку React Native Paper. Ці інструменти дають можливість реалізовувати мобільні застосунки із сучасним дизайном та швидким функціоналом."
+        "mobileServiceDescription": "Вам потрібен мобільний застосунок? Для розробки програм під смартфони ми використовуємо React Native технологію та бібліотеку React Native Paper. Ці інструменти дають можливість реалізовувати мобільні застосунки із сучасним дизайном та швидким функціоналом.",
+        "error404": "Сторінка, яку ви шукали, могла бути видалена через зміну назви або тимчасову недоступність.",
+        "backBtn": "Назад"
     },
     "en": {
         "homeLink": "HOME",
@@ -76,11 +78,11 @@
         "databaseServiceInfo2": "Typically, the business logic of a large web application uses a database to process information. Therefore, you should pay attention to this service.",
         "databaseServiceInfo3": "",
         "aboutTitle":"ABOUT",
-        "about1":"The company was registered in the specialty 'Computer programming' in 2020 year. We have been engaged in custom software development since the beginning of our existence.",
-        "about2":"The development of web applications from the simplest to the most complex in scale and business logic is the main specialization of the company. The development of the server part for a website for dermatology was one of the first such projects, using ASP.NET Core 3 WEB API technologies, Dapper and MSSQL Server. The microservices architecture helped make this project modular and easy to modify in the future.",
+        "about1":"I started working in 2019 in the specialty 'Computer programming'. I have been engaged in custom software development since the beginning of my career.",
+        "about2":"The development of web applications from the simplest to the most complex in scale and business logic is my main specialization. The development of the server part for a website for dermatology was one of the first such projects, using ASP.NET Core 3 WEB API technologies, Dapper and MSSQL Server. The microservices architecture helped make this project modular and easy to modify in the future.",
         "about3":"The second project was for an American company that was involved in food storage and delivery. A very large project, where work was not only on the server side, but also on the client side (browser). We used ASP.NET MVC 5, ASP .NET WEB API, Angular 5, Angular Material, Dapper and onion architecture. Besides, we used Selenium and Atata frameworks to support autotests.",
         "about4":"The topic of the next project was logistics for clothes from warehouses to stores. This web application helps to increase the efficiency of the sale of goods. A very interesting project with modern technologies, the versions of which were constantly updated. We used for development Angular, Angular Material, ASP.NET WEB API Core, ADO.NET, MSSQL Server, Entity Framework, SignalR and Azure Services.",
-        "aboutCEO":"Parasochka Mykola Gennadiyovych is the director of the company. He began studying at the Kharkiv Polytechnic Institute majoring in Computer Engineering in 2016. Received a bachelor's degree in 2020, and received a master's degree on December 23, 2021. He has been working in the field of computer programming since 2019 as a .Net full-stack developer.",
+        "aboutCEO":"I began studying at the Kharkiv Polytechnic Institute majoring in Computer Engineering in 2016. Received a bachelor's degree in 2020, and received a master's degree on December 23, 2021. I have been working in the field of computer programming since 2019 as a .Net full-stack developer.",
         "contactsTitle":"CONTACTS",
         "CEO":"Director: ",
         "CEOName": "Parasochka Mykola Gennadiyovych",
@@ -109,6 +111,8 @@
         "justMusic": "Just music",
         "justMusicDescription": "Simple and free ad-free audio player for listening to music from your mobile device. If you don't want to listen to some audio files, such as voice recorder files, you should use the ignore function. You can open the settings page to select the theme, language and playback speed.",
         "mobileServiceTitle": "Mobile applications development",
-        "mobileServiceDescription": "Do you need a mobile app? We use React Native technology and the React Native Paper library to develop apps for smartphones. These tools make it possible to implement mobile applications with modern design and fast functionality."
+        "mobileServiceDescription": "Do you need a mobile app? We use React Native technology and the React Native Paper library to develop apps for smartphones. These tools make it possible to implement mobile applications with modern design and fast functionality.",
+        "error404": "The page you were looking for might have been removed had it's name changed or temporary unavailable.",
+        "backBtn": "Back"
     }
 }

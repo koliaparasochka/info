@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import FourOhFour from './pages/FourOhFour';
 import Contacts from './pages/Contacts';
 import Translate from './translations/translate.json';
 import Projects from './pages/Projects';
@@ -30,7 +31,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home content={this.state.content} />}/>
             <Route path="/about" element={<About content={this.state.content} />}/>
-            
+            <Route exact path='*' element={<FourOhFour content={this.state.content}/>}></Route>
             <Route path="/projects" element={<Projects content={this.state.content} />} />
           </Routes>
         </div>
